@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><span data-th-text="${type}"></span> Types:</h1>
+    <div data-th-each="m : ${mons}" data-th-object="${m}">
+        <h4 data-th-text="*{name}"></h4>
+        <img data-th-src="*{image}">
+    </div>
+</body>
+</html>
